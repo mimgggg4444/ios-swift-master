@@ -59,4 +59,15 @@ mainLabel.textAlignment = NSTextAlignment.right
 ui를 코드로 드래그 해서 코드 추가
 
 
+---
+
+### 스토리 보드 구조
+
+- 코드 -> @iboutlet -> 스토리보드 -> ui lebel ->
+    1. interface builder(뷰-객체)와 연결된 outlet
+
+- 스토리보드 -> @ibaction -> 코드 func bu..tap(..uibutton){}
+    1. interface builder(뷰-객체)와 연결된 action
+ 
+override func viewDidLoad
 
