@@ -144,13 +144,86 @@ print(title)
 
 ```
 
+button stylr 가 plain일 경우 제대로 실행되지 않을 수 있음.
+default로 바뀌기
+
+
+
+
+``` swift
+
+var myChoice: Rps = Rps.rock
+//을 이용해서 데이터 저장
+
+var comChoice: Rps = Rps(rawValue: Int.random(in: 0...2))!
+//컴퓨터가 랜덤으로 값을 보여주는
+
+
+let title = sender.currentTile!
+print(title)
+
+
+@IBAction func selectButtonTapped(_ seder: UIButton){
+
+switch myChoice {
+case Rps.rock:
+  myImageView.image = 
+  myChoiceLabel.text = "바위"
+//...
+
+  default:
+    break
+}
+
+
+switch comChoice{
+case Rps.rock:
+  comImageView.image =
+  comChoiceLabel.text = "바위"
+case Rps.papper:
+  comImageView.image = 
+//...
+}
+
+//승패 관련 로직
+if comChoice == myChoice{
+  mainLabel.text = "비겼다"
+} else if comChoice == rock && myChoice == .paper{
+  mainLabel.text = "이겼다"
+//...
+
+
+}
 
 
 
 
 
+@IBAction func resetButtonTapped(_sender:UIButton){
+
+  comImageView.image =
+  comChoiceLabel.text = "준비"
+
+  myImageView.image =
+  myChoiceLabel.text = "준비"
+
+  mainLabel = "선택하세요"
+
+  comChoice = Rps(rawValue: Int.random(in: 0...2))!
+
+}
 
 
+```
+
+
+
+---
+---
+
+```
+
+```
 
 
 
