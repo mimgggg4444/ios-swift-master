@@ -98,10 +98,29 @@ FirstImageView.image = diceArray.randomElement()
 ---
 
 1. stack view 에서 110 맨위에 있는걸 길이 수정. constant 50으로 수정
-2. 
+2. 이미지 넣고 command + b 누르기
+
+3. 
 
 
 ### 내부로직
 
+매인 라벨
+
+이미지 뷰 2개
+
+이미지 뷰 에따른 결과 출력 라벨
+
+#### 액션
+
+- @IBAction func rpsButtonTapped(_ sender: UIButton){}
+- 에서 버튼 3개를 연결
+
+reset button
+
+select button
+
+---
+---
 
 
