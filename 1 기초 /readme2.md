@@ -111,7 +111,7 @@ FirstImageView.image = diceArray.randomElement()
 
 이미지 뷰 에따른 결과 출력 라벨
 
-#### 액션
+액션
 
 - @IBAction func rpsButtonTapped(_ sender: UIButton){}
 - 에서 버튼 3개를 연결
@@ -122,5 +122,36 @@ select button
 
 ---
 ---
+
+UIImage(named: "ready.png")
+comChiceLabel.text = "준비"
+
+- Rps.swift 생성, enum으로
+
+- Rps.papper
+
+
+``` swift
+
+// guard let title = sender.currentTile else{return}
+
+
+let title = sender.currentTitle!
+print(title)
+
+
+
+
+```
+
+
+
+
+
+
+
+
+
+
 
 
